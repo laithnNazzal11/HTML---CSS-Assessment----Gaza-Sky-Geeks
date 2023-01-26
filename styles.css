@@ -1,0 +1,375 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.hero{
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100vh;
+    background: #eff4fd;
+    position: relative;
+}
+
+nav{
+    display: flex;
+    width: 84%;
+    margin: auto;
+    padding: 20px 0;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    width: 100px;
+    cursor: pointer;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+
+nav ul li a:hover{
+    color: #ffa500;
+}
+.header {
+    display: flex;
+}
+.detel{
+    margin-left: 8%;
+    margin-top: 2%;
+}
+
+.detel h1{
+    font-size: 50px;
+    color: #212121;
+    margin-bottom: 20px;
+}
+
+span{
+    color: orange;
+    
+}
+
+.detel p{
+    color: #555;
+    line-height: 22px;
+}
+.detel .why {
+    margin-top: 3%;
+}
+
+.detel .why h3 {
+    background-color: #ffa500;
+    color:#eff4fd;
+    margin-bottom: 1%;
+    width: fit-content;
+    padding: 10px;
+    border-radius: 5px;
+}
+.detel .why h3:hover {
+    background-color: #f4f4f4;
+    color:#ffa500;
+    transition: .5s;
+    border-bottom: 1px solid #ffa500;
+
+}
+
+.detel p span {
+    color: #ffa500;
+}
+
+
+.detel a{
+    background: #212121;
+    padding: 10px 18px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #fff;
+    display: inline-block;
+    margin: 30px 0;
+    border-radius: 5px;
+}
+
+.skills {
+    width: 600px;
+    margin-top: 70px;
+}
+
+ .skills .prog-holder {
+    margin-bottom: 40px;
+    margin-top: 40px;
+
+
+
+}
+
+ .skills .prog-holder h4 {
+    margin-bottom: 15px;
+    font-weight: normal;
+    text-transform: uppercase;
+
+    
+}
+
+ .skills .prog-holder .prog{
+    background-color: #dedadc;
+    height: 30px;
+
+    
+}
+
+ .skills .prog-holder .prog span{
+  display: block;
+  background-color: #ffa500;
+  height: 100%;
+  position: relative;
+  
+    
+}
+
+ .skills .prog-holder .prog span::before{
+    content: attr(data-progress);
+    display: flex;
+    color:white;
+    font-size: 10px;
+    justify-content: center;
+    align-items: center;
+    position:absolute;
+    background-color: #1f2021;
+    width:30px;
+    height: 20px;
+    right: -15px;
+    top:-30px;
+
+    
+}
+
+ .skills .prog-holder .prog span::after{
+    content: "";
+    position: absolute;
+    border-color: #1f2021 transparent transparent transparent;
+    border-style: solid;
+    border-width: 10px;
+    right: -10px;
+    top:-15px;
+
+}
+
+.images{
+    width: 45%;
+    height: 80%;
+    position: absolute;
+    bottom: 0;
+    right: 100px;
+}
+
+.images img{
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    transition: bottom 1s, left 1s;
+}
+
+
+.images:hover .shape{
+    bottom: 40px;
+}
+
+.images:hover .laith{
+    left: 45%;
+}
+
+.portfolio {
+    padding-bottom:100px;
+    padding-top:100px;
+    padding-bottom: 100px;
+    height: 100vh;
+}
+
+.main-heading {
+    text-align: center;
+   
+    
+}  
+.main-heading h2 {
+    font-weight: normal;
+    margin-bottom: 10px;
+    position: relative;
+    font-size: 40px;
+    text-transform: uppercase;
+    color: rgb(138, 138, 138);
+
+}
+
+.main-heading p {
+    color:rgb(138, 138, 138);;
+}
+
+
+
+.portfolio .img-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 60px;
+    padding-bottom: 100px;
+
+}
+
+.portfolio .img-container .box{
+    position: relative;
+    overflow: hidden;
+    
+}
+.portfolio .img-container .box:hover .caption {
+    bottom: 0;
+
+}
+
+.portfolio .img-container .box:hover img {
+    transform: rotate(3deg) scale(1.1);
+
+}
+
+
+@media (min-width:768px) {
+
+    .portfolio .img-container .box{
+        flex-basis: 50%;
+        
+    }
+    
+}
+
+@media (min-width:1119px) {
+
+    .portfolio .img-container .box{
+        flex-basis: 25%;
+        
+    }
+    
+}
+
+
+
+.portfolio .img-container .box img{
+    transition: 0.3s;
+    max-width:100%;
+   
+}
+
+.portfolio .img-container .box .caption{
+    background-color: #ffa500;
+    position:absolute;
+    bottom: -100%;
+    width:100%;
+    text-align: left;
+    padding:20px;
+    transition: 0.3s;
+}
+
+.portfolio .img-container .box .caption h4{
+    color: white;
+    font-weight: normal;
+    margin-bottom: 10px;
+
+}
+
+.portfolio .img-container .box .caption p{
+    color: var(--main-color);
+    font-weight: normal;
+    line-height: 1.5;
+    color:white;
+
+}
+
+
+
+
+
+/* start footer */
+.footer {
+    margin-top: 10px;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    background-color: #212121;
+    color: white;
+    text-align: center;
+
+}
+
+
+
+.footer p:not(.copyrigth) {
+
+    text-transform:uppercase;
+    font-weight: normal;
+    font-size: 20px;
+    position: relative;
+    border-bottom: 1px solid white;
+    width: fit-content;
+    margin: 20px auto;
+    padding:20px;
+
+    
+}
+
+
+ 
+    
+
+    
+
+
+
+
+.footer .copyrigth{
+    margin-top: 20px;
+    line-height: 2;
+    letter-spacing: 1.5;
+}
+
+
+
+.footer .social-icons {
+    margin-bottom: 20px;
+    margin-top: 20px;
+
+}
+
+.footer .social-icons i {
+    margin-left:10px;
+    margin-right: 10px;
+
+
+}
+
+
+.footer .copyrigth span{
+    color: var(--main-color)
+}
+
+
+
+
+
+
+/* end footer */
+
+
+
+
+
+
